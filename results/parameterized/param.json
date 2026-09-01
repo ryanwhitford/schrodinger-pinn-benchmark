@@ -1,0 +1,27 @@
+{
+  "hardware": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "processor": "arm",
+    "python": "3.11.15",
+    "numpy": "2.4.6",
+    "torch": "2.13.0",
+    "cuda_available": false
+  },
+  "t_train_s": 10.083242916996824,
+  "t_fdm_single_s": 0.006832760348333977,
+  "t_infer_single_s": 0.0002625840133987367,
+  "crossover_N_discrete": 10000,
+  "crossover_N_continuous": 1534.6989795969014,
+  "budget": {
+    "lam_min": 0.0,
+    "lam_max": 0.5,
+    "nx": 192,
+    "nlam": 21,
+    "width": 64,
+    "depth": 4,
+    "epochs": 4000,
+    "lr": 0.003,
+    "fdm_n": 400,
+    "seed": 0
+  }
+}

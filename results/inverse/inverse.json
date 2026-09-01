@@ -1,0 +1,37 @@
+{
+  "hardware": {
+    "platform": "Linux-6.18.44-fc-v22-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "python": "3.11.15",
+    "numpy": "2.4.4",
+    "torch": "2.13.0+cu130",
+    "cuda_available": false
+  },
+  "lambda": 0.3,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "budget": {
+    "lam": 0.3,
+    "n_data": [
+      10,
+      25,
+      50,
+      100
+    ],
+    "noise": 0.0,
+    "n_coll": 500,
+    "width": 64,
+    "depth": 4,
+    "epochs": 2500,
+    "lr": 0.003,
+    "w_data": 100.0,
+    "w_pde": 1.0,
+    "w_norm": 1.0,
+    "w_bc": 1.0,
+    "w_smooth": 0.001,
+    "seeds": 3
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "hardware": {
+    "platform": "Linux-6.18.44-fc-v22-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "python": "3.11.15",
+    "numpy": "2.4.4",
+    "torch": "2.13.0+cu130",
+    "cuda_available": false
+  },
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "fdm_budget": {
+    "n_fixed": 40,
+    "n_feasible": 150000
+  },
+  "pinn_budget": {
+    "epochs": 1200,
+    "collocation": 2000
+  }
+}
