@@ -90,7 +90,7 @@ low-dimensional forward solve, **FDM is the right tool by a wide margin.**
 ### 5.2 Dimensional scaling
 
 Fixed $n=40$ points per axis, so the FDM grid is exactly $N=n^d$
-(`results/scaling/`):
+([`results/scaling/`](results/scaling/)):
 
 | $d$ | FDM grid $N=n^d$ | FDM time | FDM energy err | PINN time (3 seeds) | PINN energy err |
 |----:|-----------------:|---------:|---------------:|--------------------:|----------------:|
@@ -106,13 +106,13 @@ need $(n^d)^2$ — astronomically more). The PINN, by contrast, keeps a fixed ~8
 parameters and runs at every dimension. **But its energy error is large and
 non-monotonic** (0.04 → 0.30 → 0.14 → 0.86): avoiding the grid does not confer accuracy.
 The curse of dimensionality reappears as an optimization/coverage problem.
-See `results/scaling/scaling.png`.
+See [`results/scaling/scaling.png`](results/scaling/scaling.png).
 
 ### 5.3 Parameterized PINN
 
 One network trained over $\lambda\in[0,0.5]$ (17 nodes, 23.5 s) predicts the ground-state
 energy at 16 **held-out** $\lambda$ values with mean error $5\times10^{-3}$ and
-wavefunction $L_2$ error $\sim\!10^{-2}$ (`results/parameterized/`). Timing:
+wavefunction $L_2$ error $\sim\!10^{-2}$ ([`results/parameterized/`](results/parameterized/)). Timing:
 
 - FDM single solve: **14.9 ms**  ·  PINN inference: **0.23 ms**  ·  PINN training: **23.5 s**
 
@@ -135,7 +135,7 @@ on the supported region):
 Quality is roughly flat in $N$: the Schrödinger constraint does the heavy lifting, so
 even ~10 points suffice (plain interpolation of 10 points could not recover a
 potential), and adding data saturates because the bottleneck is the joint optimization.
-See `results/inverse/inverse.png`.
+See [`results/inverse/inverse.png`](results/inverse/inverse.png).
 
 ### 5.5 Convergence — methods must be compared at matched, converged settings
 
@@ -148,7 +148,7 @@ fixed 2000-epoch budget, width 32 gives $3.5\times10^{-4}$ while width 128 gives
 Collocation count matters little once integration is fine enough (the optimization
 floor dominates). This is exactly why comparing the two methods at arbitrary settings is
 meaningless — each must be run at converged, matched settings. See
-`results/convergence/convergence.png`.
+[`results/convergence/convergence.png`](results/convergence/convergence.png).
 
 ## 6 · Conclusions
 
