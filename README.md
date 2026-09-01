@@ -56,7 +56,9 @@ parameter** (the analytic value is never used). The loss combines the PDE residu
 normalization term $\big(\int|\psi|^2-1\big)^2$, a boundary term, and, for excited
 states, an orthogonality penalty against previously found states:
 
-$$\mathcal L = \mathcal L_\text{PDE} + \lambda_N\mathcal L_\text{norm} + \lambda_{BC}\mathcal L_{BC} + \lambda_O\sum_{m<n}\langle\psi_n,\psi_m\rangle^2.$$
+$$
+\mathcal{L} = \mathcal{L}_{\mathrm{PDE}} + \lambda_N \mathcal{L}_{\mathrm{norm}} + \lambda_{\mathrm{BC}} \mathcal{L}_{\mathrm{BC}} + \lambda_O \sum_{m<n} \langle \psi_n, \psi_m \rangle^2 .
+$$
 
 Spatial integrals use deterministic trapezoidal quadrature in 1D and Monte-Carlo
 sampling in higher dimensions. *Documented limitation:* the residual/orthogonality
